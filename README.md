@@ -1,3 +1,0 @@
-# Simulasi-Project
-
-...
