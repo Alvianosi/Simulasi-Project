@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour
 {
     public int score;
+    public GameOverScreen GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,12 @@ public class GameHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TimerManager.instance.TimerDown();
     }
+
+    public void GameOver(){
+        GameOverScreen.Setup(ScoreManager.instance.score);
+    }
+
+
 }
