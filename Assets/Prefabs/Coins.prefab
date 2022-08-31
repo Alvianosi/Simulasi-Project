@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1694361011482504157}
   - component: {fileID: 3949083197290660137}
-  - component: {fileID: 2437293327628740602}
   - component: {fileID: -1820261983690997072}
   - component: {fileID: -228618809159152244}
+  - component: {fileID: 7297401226888010909}
   m_Layer: 11
   m_Name: Coins
   m_TagString: CoinsA
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: d63209e022e24714db3239bb961629c4, type: 3}
-  m_Color: {r: 0.9150943, g: 0.9020886, b: 0.26330543, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c45d5fb98d55d7d438004ad0120ae5f0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,37 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2437293327628740602
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3696610051648561623}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.43301272, y: 0.24999999}
-      - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.00000004371139, y: -0.5}
-      - {x: 0.43301272, y: -0.24999996}
-      - {x: 0.43301272, y: 0.24999996}
 --- !u!50 &-1820261983690997072
 Rigidbody2D:
   serializedVersion: 4
@@ -148,9 +117,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd36df3c33fe82a418aae749e6573f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gh: {fileID: 9219661353307851574, guid: b013854de9e15cc45973aa06caac7647, type: 3}
   minusScoreA: 1
   minusScoreB: 1
   plusScoreA: 1
   plusScoreB: 1
   plusScoreC: 1
+--- !u!58 &7297401226888010909
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3696610051648561623}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.64

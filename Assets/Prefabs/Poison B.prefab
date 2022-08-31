@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 724650222810642495}
   - component: {fileID: 724650222810642492}
-  - component: {fileID: 724650222810642493}
   - component: {fileID: 1522619493134345256}
   - component: {fileID: -5255064192049183493}
+  - component: {fileID: 8200287247232097083}
   m_Layer: 8
   m_Name: Poison B
   m_TagString: PoisonB
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 724650222810642482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4, y: -0.9, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: de6a765d331f1914bb815ececd4dc781, type: 3}
-  m_Color: {r: 0.06503435, g: 0.6509804, b: 0.035294116, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5dcd96c6a553e034ea33595de4942afe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,35 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &724650222810642493
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724650222810642482}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.5, y: -0.000000021855694}
-      - {x: 0.00000004371139, y: -0.5}
-      - {x: 0.5, y: 0.0000000059624403}
 --- !u!50 &1522619493134345256
 Rigidbody2D:
   serializedVersion: 4
@@ -151,3 +122,19 @@ MonoBehaviour:
   plusScoreA: 1
   plusScoreB: 1
   plusScoreC: 1
+--- !u!70 &8200287247232097083
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724650222810642482}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2}
+  m_Size: {x: 0.5, y: 1.6}
+  m_Direction: 0

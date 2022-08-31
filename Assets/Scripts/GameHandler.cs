@@ -18,10 +18,13 @@ public class GameHandler : MonoBehaviour
     void Update()
     {
         TimerManager.instance.TimerDown();
+        GameOver();
     }
 
     public void GameOver(){
-        GameOverScreen.Setup(ScoreManager.instance.score);
+        if(TimerManager.instance.time < 0){
+            GameOverScreen.Setup(ScoreManager.instance.score);
+        }
     }
 
 
