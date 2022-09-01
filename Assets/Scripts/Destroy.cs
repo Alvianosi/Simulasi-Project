@@ -23,7 +23,7 @@ public class Destroy : MonoBehaviour
     }
 
     void OnBecameInvisible() {
-         Destroy(gameObject);
+        Destroy(gameObject);
      }
 
     private void OnTriggerEnter2D(Collider2D collision) {
